@@ -29,13 +29,13 @@ export default function Layout({element}) {
             </Helmet>
             <main role="main" className="container bg-white border p-0">
                 <nav className="navbar navbar-expand-lg navbar-light bg-light mb-3 justify-content-center">
-                    <a className="navbar-brand" href="#">
+                    <Link className="navbar-brand" to="/">
                         <img
                             src={logo}
                             width="243px"
                             height="40px"
                         />
-                    </a>
+                    </Link>
                     <div>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
