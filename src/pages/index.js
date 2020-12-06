@@ -10,10 +10,10 @@ export default function Home({data}) {
                 <div className="col-12">
                     <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false} className="pb-2">
                         <div>
-                            <img src="img/carousel/slide-1.jpg" style={{objectFit: "cover"}}/>
+                            <img src="../../static/img/carousel/slide-1.jpg" style={{objectFit: "cover"}}/>
                         </div>
                         <div>
-                            <img src="img/carousel/slide-2.jpg" style={{objectFit: "cover"}}/>
+                            <img src="../../static/img/carousel/slide-2.jpg" style={{objectFit: "cover"}}/>
                         </div>
                     </Carousel>
                 </div>
@@ -28,7 +28,7 @@ export default function Home({data}) {
                     </div>
                     <div className="row">
                         <div className="col-lg-4 text-center">
-                            <img src="img/church.jpg"
+                            <img src="../../static/img/church.jpg"
                                  alt="Иллюстрация" className="main-page-image"
                             />
                         </div>

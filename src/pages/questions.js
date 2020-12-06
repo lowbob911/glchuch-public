@@ -44,7 +44,7 @@ export default function Questions({data}) {
         <div className="row">
             <div className="col-12">
                 <div className="text-center">
-                    <img src="/img/question-mark.png" className="header-img" alt="Вопрос пастору"/>
+                    <img src="../../static/img/question-mark.png" className="header-img" alt="Вопрос пастору"/>
                 </div>
                 <div className="text-center">
                     <h3>Вопрос пастору</h3>

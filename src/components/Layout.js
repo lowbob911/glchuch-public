@@ -11,7 +11,7 @@ export default function Layout({element}) {
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <meta name="keywords" content="свет евангелия, церковь, церковь минск, церковь серебрянка, церковь райниса, свет евангелия, баптисты минск, иисус, бог, библия, евангелие"/>
 
-                <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+                <link rel="shortcut icon" href="../../static/img/favicon.png" type="image/x-icon"/>
 
                 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155332714-1"/>
                 <script>
@@ -28,7 +28,7 @@ export default function Layout({element}) {
                 <nav className="navbar navbar-expand-lg navbar-light bg-light mb-3 justify-content-center">
                     <a className="navbar-brand" href="#">
                         <img
-                            src="/img/logo.jpg"
+                            src="../../static/img/logo.jpg"
                             width="243px"
                             height="40px"
                         />
