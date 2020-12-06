@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/hosting1/evangelieby/public_htmls/
+    - /bin/cp -R public $DEPLOYPATH
