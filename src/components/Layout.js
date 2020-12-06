@@ -40,18 +40,18 @@ export default function Layout({element}) {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav">
-                                <li className="nav-item active">
-                                    <Link className="nav-link" to="/">Церковь</Link>
+                                <li className="nav-item">
+                                    <Link className="nav-link" activeClassName="text-d-underline" to="/">Церковь</Link>
                                 </li>
                                 {/*<li className="nav-item active">*/}
                                 {/*    <a className="nav-link" href="/services">Служения</a>*/}
                                 {/*</li>*/}
-                                <li className="nav-item active">
-                                    <Link className="nav-link" to="/questions">Вопросы-ответы</Link>
+                                <li className="nav-item">
+                                    <Link className="nav-link" activeClassName="text-d-underline" to="/questions">Вопросы-ответы</Link>
                                 </li>
-                                {/*<li className="nav-item active">*/}
-                                {/*    <a className="nav-link" href="/resources">Ресурсы</a>*/}
-                                {/*</li>*/}
+                                <li className="nav-item">
+                                    <Link className="nav-link" activeClassName="text-d-underline" to="/statement">Вероучение</Link>
+                                </li>
                             </ul>
                         </div>
                     </div>

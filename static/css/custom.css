@@ -46,3 +46,11 @@ body {
     max-width: 200px;
     max-height: 200px;
 }
+
+.navbar-light .navbar-nav a:hover {
+    text-decoration: underline;
+}
+
+.text-d-underline {
+    text-decoration: underline !important;
+}
