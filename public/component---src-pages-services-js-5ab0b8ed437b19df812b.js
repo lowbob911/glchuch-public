@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{wCYt:function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return s}));var a=t("q1tI"),c=t.n(a);function s(e){e.data;return c.a.createElement("div",{className:"row"},c.a.createElement("div",{className:"col-12"},"Questions page"))}}}]);
+//# sourceMappingURL=component---src-pages-services-js-5ab0b8ed437b19df812b.js.map
