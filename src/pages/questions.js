@@ -1,6 +1,7 @@
 import React from "react";
 import {faAngleRight, faCalendarAlt} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import questionMarkImg from "../../assets/img/question-mark.png";
 
 export default function Questions({data}) {
     const questions = [
@@ -44,7 +45,7 @@ export default function Questions({data}) {
         <div className="row">
             <div className="col-12">
                 <div className="text-center">
-                    <img src="../../static/img/question-mark.png" className="header-img" alt="Вопрос пастору"/>
+                    <img src={questionMarkImg} className="header-img" alt="Вопрос пастору"/>
                 </div>
                 <div className="text-center">
                     <h3>Вопрос пастору</h3>

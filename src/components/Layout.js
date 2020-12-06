@@ -1,6 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet'
 import { Link } from "gatsby"
+import logo from "../../assets/img/logo.jpg"
+import favicon from "../../assets/img/favicon.png"
+
 
 export default function Layout({element}) {
     return (
@@ -11,7 +14,7 @@ export default function Layout({element}) {
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <meta name="keywords" content="свет евангелия, церковь, церковь минск, церковь серебрянка, церковь райниса, свет евангелия, баптисты минск, иисус, бог, библия, евангелие"/>
 
-                <link rel="shortcut icon" href="../../static/img/favicon.png" type="image/x-icon"/>
+                <link rel="shortcut icon" href={favicon} type="image/x-icon"/>
 
                 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155332714-1"/>
                 <script>
@@ -28,7 +31,7 @@ export default function Layout({element}) {
                 <nav className="navbar navbar-expand-lg navbar-light bg-light mb-3 justify-content-center">
                     <a className="navbar-brand" href="#">
                         <img
-                            src="../../static/img/logo.jpg"
+                            src={logo}
                             width="243px"
                             height="40px"
                         />

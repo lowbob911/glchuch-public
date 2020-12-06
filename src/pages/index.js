@@ -2,6 +2,9 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import MainSidePanel from "../components/MainSidePanel";
+import slide1 from "../../assets/img/carousel/slide-1.jpg"
+import slide2 from "../../assets/img/carousel/slide-2.jpg"
+import churchImg from "../../assets/img/church.jpg"
 
 export default function Home({data}) {
     return (
@@ -10,10 +13,10 @@ export default function Home({data}) {
                 <div className="col-12">
                     <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false} className="pb-2">
                         <div>
-                            <img src="../../static/img/carousel/slide-1.jpg" style={{objectFit: "cover"}}/>
+                            <img src={slide1} style={{objectFit: "cover"}}/>
                         </div>
                         <div>
-                            <img src="../../static/img/carousel/slide-2.jpg" style={{objectFit: "cover"}}/>
+                            <img src={slide2} style={{objectFit: "cover"}}/>
                         </div>
                     </Carousel>
                 </div>
@@ -28,7 +31,7 @@ export default function Home({data}) {
                     </div>
                     <div className="row">
                         <div className="col-lg-4 text-center">
-                            <img src="../../static/img/church.jpg"
+                            <img src={churchImg}
                                  alt="Иллюстрация" className="main-page-image"
                             />
                         </div>
