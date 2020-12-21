@@ -26,7 +26,7 @@ export default function MainSidePanel() {
                 </div>
                 <div className="row border-bottom border-top">
                     <div className="col-3">
-                        18:30
+                        18:00
                     </div>
                     <div className="col-9">
                         Подростковые группы по изучению Библии
@@ -78,7 +78,7 @@ export default function MainSidePanel() {
                 </div>
                 <div className="row mt-1 border-bottom">
                     <div className="col-3">
-                        19:45
+                        20:00
                     </div>
                     <div className="col-9">
                         Молодежное общение
