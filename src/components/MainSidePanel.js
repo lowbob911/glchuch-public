@@ -8,7 +8,7 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 config.autoAddCss = false;
 
 
-export default function MainSidePanel() {
+export default function MainSidePanel({schedule}) {
     return (
         <div className="row mt-2">
             <div className="col-12 text-center">
@@ -19,71 +19,25 @@ export default function MainSidePanel() {
                 </h4>
             </div>
             <div className="col-12 text-right">
-                <div className="row mt-4 text-center">
-                    <div className="col-12">
-                        <h5>Вторник</h5>
-                    </div>
-                </div>
-                <div className="row border-bottom border-top">
-                    <div className="col-3">
-                        18:00
-                    </div>
-                    <div className="col-9">
-                        Подростковые группы по изучению Библии
-                    </div>
-                </div>
-                <div className="row mt-1 border-bottom">
-                    <div className="col-3">
-                        19:00
-                    </div>
-                    <div className="col-9">
-                        Молодежные группы по изучению Библии
-                    </div>
-                </div>
-
-                <div className="row mt-4 text-center">
-                    <div className="col-12">
-                        <h5>Четверг</h5>
-                    </div>
-                </div>
-                <div className="row border-bottom border-top">
-                    <div className="col-3">
-                        18:30
-                    </div>
-                    <div className="col-9">
-                        Молитвенное собрание
-                    </div>
-                </div>
-
-                <div className="row mt-4 text-center">
-                    <div className="col-12">
-                        <h5>Воскресенье</h5>
-                    </div>
-                </div>
-                <div className="row border-bottom border-top">
-                    <div className="col-3">
-                        10:00
-                    </div>
-                    <div className="col-9">
-                        Утреннее Собрание
-                    </div>
-                </div>
-                <div className="row mt-1 border-bottom">
-                    <div className="col-3">
-                        18:00
-                    </div>
-                    <div className="col-9">
-                        Вечернее Собрание
-                    </div>
-                </div>
-                <div className="row mt-1 border-bottom">
-                    <div className="col-3">
-                        20:00
-                    </div>
-                    <div className="col-9">
-                        Молодежное общение
-                    </div>
-                </div>
+                {Object.keys(schedule).map((key, index) => (
+                    <React.Fragment key={`schedule-day-${index}`}>
+                        <div className="row mt-4 text-center">
+                            <div className="col-12">
+                                <h5>{schedule[key][0].week_day.Name }</h5>
+                            </div>
+                        </div>
+                        {schedule[key].map((item, index) => (
+                            <div className="row border-bottom border-top" key={`schedule-item-${index}`}>
+                                <div className="col-3">
+                                    {item.Time}
+                                </div>
+                                <div className="col-9">
+                                    {item.Title}
+                                </div>
+                            </div>
+                        ))}
+                    </React.Fragment>
+                ))}
             </div>
             <div className="col-12 text-center">
                 <div className="row mt-3">
