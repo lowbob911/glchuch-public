@@ -45,7 +45,7 @@ export default function MainSidePanel({schedule}) {
                         <h5><FontAwesomeIcon icon={faUsers}/></h5>
                         Информация о молодежной жизни:<br/>
                         <a href="https://t.me/molodejkase" className="h5"><FontAwesomeIcon icon={faTelegram}/></a>
-                        <a href="https://vk.com/molodezhka_sv" className="h5"><FontAwesomeIcon icon={faVk} className="ml-2"/></a>
+                        <a href="https://vk.com/molodejka_se" className="h5"><FontAwesomeIcon icon={faVk} className="ml-2"/></a>
                     </div>
                 </div>
 
