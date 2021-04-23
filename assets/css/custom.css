@@ -61,13 +61,12 @@ body {
 }
 
 .publication-item .publication-img {
-    flex-basis: 300px;
-    flex-shrink: 0;
+    flex: 1 1 300px;
     margin: 5px;
 }
 
 .publication-item .publication-img img {
-    width: 100%;
+    width: 300px;
     height: 180px;
 }
 
