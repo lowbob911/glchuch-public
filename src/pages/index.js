@@ -12,8 +12,10 @@ export default function Home() {
         fetch(`${process.env.GATSBY_API_URL}/publications`)
             .then(response => response.json())
             .then(resultData => {
-                console.log(resultData);
-                setPublications(resultData);
+                resultData.forEach(publication => {
+                   publication.publidhedDate = new Date(publication.published_at);
+                });
+                setPublications(resultData.sort((a,b) => (a.publidhedDate > b.publidhedDate) ? 1 : ((b.publidhedDate > a.publidhedDate) ? -1 : 0)).reverse());
             })
     }, []);
 
