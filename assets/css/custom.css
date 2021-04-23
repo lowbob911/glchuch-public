@@ -54,3 +54,40 @@ body {
 .text-d-underline {
     text-decoration: underline !important;
 }
+
+.publication-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.publication-item .publication-img {
+    flex-basis: 250px;
+    flex-shrink: 0;
+    margin: 5px;
+}
+
+.publication-item .publication-img img {
+    width: 100%;
+    height: 180px;
+}
+
+.publication-item .publication-info {
+    margin: 0 5px;
+    flex: 1;
+    flex-shrink: 0;
+}
+
+.publication-item .publication-time {
+    color: darkgray;
+}
+
+.publication-item .publication-label {
+    color: #31abe0;
+    font-weight: 700;
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+
+.publication-page-title {
+    color: #31abe0;
+}

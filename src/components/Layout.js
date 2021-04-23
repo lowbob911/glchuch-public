@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { Helmet } from 'react-helmet'
 import { Link } from "gatsby"
 import logo from "../../assets/img/logo.jpg"
@@ -44,7 +44,10 @@ export default function Layout({element}) {
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <Link className="nav-link" activeClassName="text-d-underline" to="/">Церковь</Link>
+                                    <Link className="nav-link" activeClassName="text-d-underline" to="/">Главная</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" activeClassName="text-d-underline" to="/about">О Церкви</Link>
                                 </li>
                                 {/*<li className="nav-item active">*/}
                                 {/*    <a className="nav-link" href="/services">Служения</a>*/}

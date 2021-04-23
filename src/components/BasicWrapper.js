@@ -3,8 +3,11 @@ import slide1 from "../../assets/img/carousel/slide-1.jpg";
 import slide2 from "../../assets/img/carousel/slide-2.jpg";
 import MainSidePanel from "./MainSidePanel";
 import React from "react";
+import useSchedule from "../../hooks/UseSchedule";
 
 export default function BasicWrapper(props) {
+    const schedule = useSchedule();
+
     return (
         <React.Fragment>
             <div className="row header slider-container">
@@ -24,7 +27,7 @@ export default function BasicWrapper(props) {
                     {props.children}
                 </div>
                 <div className="col-md-5 col-lg-3 side-column">
-                    <MainSidePanel schedule={props.schedule}/>
+                    <MainSidePanel schedule={schedule}/>
                 </div>
             </div>
         </React.Fragment>
