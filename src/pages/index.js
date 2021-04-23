@@ -28,7 +28,7 @@ export default function Home() {
                 {publications.map(publication => (
                     <div className="col-12" key={`test_${publication._id}`}>
                         <div className="publication-item">
-                            <div className="publication-img">
+                            <div className="publication-img text-center">
                                 <Link to={`/publication?id=${publication._id}`}>
                                     <img src={publication?.previewImage?.url || churchImg}
                                          alt={publication.label}
