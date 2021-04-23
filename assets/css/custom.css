@@ -61,7 +61,7 @@ body {
 }
 
 .publication-item .publication-img {
-    flex-basis: 250px;
+    flex-basis: 300px;
     flex-shrink: 0;
     margin: 5px;
 }
@@ -90,4 +90,8 @@ body {
 
 .publication-page-title {
     color: #31abe0;
+}
+
+.publication-page-content img {
+    width: 100%;
 }

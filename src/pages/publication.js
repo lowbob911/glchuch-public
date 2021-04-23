@@ -26,7 +26,7 @@ export default function Publication(props) {
                 </div>
                 <div className="col-12">
                     {publication?.content &&
-                    <div dangerouslySetInnerHTML={{__html: new showdown.Converter().makeHtml(publication.content)}}/>}
+                    <div className="publication-page-content" dangerouslySetInnerHTML={{__html: new showdown.Converter().makeHtml(publication.content)}}/>}
                 </div>
             </div>
         </BasicWrapper>
