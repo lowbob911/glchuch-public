@@ -69,6 +69,12 @@ body {
     flex: 1 1 300px;
 }
 
+@media screen and (max-width: 767px) {
+    .slide-container img {
+        height: 155px;
+    }
+}
+
 .publication-item .publication-time {
     color: darkgray;
 }

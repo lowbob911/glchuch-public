@@ -13,7 +13,7 @@ export default function BasicWrapper(props) {
                 <div className="col-12">
                     <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false} showIndicators={false} className="pb-2">
                         <a href="https://www.youtube.com/channel/UC1QCGBuW0vrqJrcWz58F_zg" target="_blank">
-                            <div>
+                            <div className="slide-container">
                                 <img src={slide1} style={{objectFit: "cover"}}/>
                             </div>
                         </a>
