@@ -20,7 +20,7 @@ export default function Layout({element}) {
                 <script>
                     {`
                         window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
+                        function gtag(){dataLayer.push(arguments);}s
                         gtag('js', new Date());
 
                         gtag('config', 'UA-155332714-1');

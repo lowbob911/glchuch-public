@@ -1,6 +1,5 @@
 import {Carousel} from "react-responsive-carousel";
 import slide1 from "../../assets/img/carousel/slide-1.jpg";
-import slide2 from "../../assets/img/carousel/slide-2.jpg";
 import MainSidePanel from "./MainSidePanel";
 import React from "react";
 import useSchedule from "../../hooks/UseSchedule";
@@ -10,15 +9,14 @@ export default function BasicWrapper(props) {
 
     return (
         <React.Fragment>
-            <div className="row header slider-container">
+            <div className="row header">
                 <div className="col-12">
-                    <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false} className="pb-2">
-                        <div>
-                            <img src={slide1} style={{objectFit: "cover"}}/>
-                        </div>
-                        <div>
-                            <img src={slide2} style={{objectFit: "cover"}}/>
-                        </div>
+                    <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false} showIndicators={false} className="pb-2">
+                        <a href="https://www.youtube.com/channel/UC1QCGBuW0vrqJrcWz58F_zg" target="_blank">
+                            <div>
+                                <img src={slide1} style={{objectFit: "cover"}}/>
+                            </div>
+                        </a>
                     </Carousel>
                 </div>
             </div>
