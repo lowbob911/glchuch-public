@@ -24,6 +24,12 @@ body {
     }
 }
 
+@media screen and (max-width: 988px) {
+    .slider-container {
+        display: none;
+    }
+}
+
 .main-page-image {
     max-width: 250px;
     max-height: 200px;
