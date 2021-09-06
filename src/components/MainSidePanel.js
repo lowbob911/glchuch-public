@@ -1,6 +1,6 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCalendarAlt, faUsers} from "@fortawesome/free-solid-svg-icons";
-import {faTelegram, faVk} from "@fortawesome/free-brands-svg-icons";
+import {faInstagram} from "@fortawesome/free-brands-svg-icons";
 import React from "react";
 
 import { config } from '@fortawesome/fontawesome-svg-core'
@@ -43,9 +43,10 @@ export default function MainSidePanel({schedule}) {
                 <div className="row mt-3">
                     <div className="col-12">
                         <h5><FontAwesomeIcon icon={faUsers}/></h5>
-                        Информация о молодежной жизни:<br/>
-                        <a href="https://t.me/molodejkase" className="h5"><FontAwesomeIcon icon={faTelegram}/></a>
-                        <a href="https://vk.com/molodejka_se" className="h5"><FontAwesomeIcon icon={faVk} className="ml-2"/></a>
+                        Мы в социальных сетях:<br/>
+                        <FontAwesomeIcon icon={faInstagram}/> <a href="https://www.instagram.com/sunday_school_light">Воскресная школа и кружки</a><br/>
+                        <FontAwesomeIcon icon={faInstagram}/> <a href="https://www.instagram.com/molodejka_se">Молодёжные встречи</a><br/>
+                        <FontAwesomeIcon icon={faInstagram}/> <a href="https://www.instagram.com/christians_in_sport._/">Молодёжные спортивные встречи</a><br/>
                     </div>
                 </div>
 
