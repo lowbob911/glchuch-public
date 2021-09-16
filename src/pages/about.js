@@ -9,10 +9,10 @@ export default function Home() {
             <div className="row mt-2">
                 <div className="col-12">
                     <div className="text-center">
-                        <h3 className="main-color">
+                        <h1 className="main-color">
                             Церковь "Свет Евангелия"<br/>
                             Евангельских Христиан Баптистов
-                        </h3>
+                        </h1>
                     </div>
                     <div className="row">
                         <div className="col-lg-4 text-center">

@@ -22,9 +22,9 @@ export default function Home() {
     return (
         <BasicWrapper>
             <div className="text-center">
-                <h3 className="main-color">
+                <h1 className="main-color">
                     Новости
-                </h3>
+                </h1>
             </div>
             <div className="row mt-3">
                 {publications.map(publication => (

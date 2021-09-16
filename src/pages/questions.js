@@ -48,7 +48,7 @@ export default function Questions({data}) {
                     <img src={questionMarkImg} className="header-img" alt="Вопрос пастору"/>
                 </div>
                 <div className="text-center">
-                    <h3>Вопрос пастору</h3>
+                    <h1>Вопрос пастору</h1>
                     <p>
                         Здесь опубликованы ответы на вопросы заданные пастору нашей церкви.
                     </p>
@@ -60,7 +60,7 @@ export default function Questions({data}) {
                 </div>
 
                 <div className="text-center">
-                    <h3>Общие вопросы</h3>
+                    <h1>Общие вопросы</h1>
                 </div>
                 <div className="accordion mt-3" id="questionsAccordion">
                     {questions.map((q,index) => (

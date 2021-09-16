@@ -2,6 +2,10 @@ body {
     background-color: #ececec;
 }
 
+h1 {
+    font-size: 1.75rem;
+}
+
 .navbar {
     border-bottom: 3px solid #31abe0;
 }

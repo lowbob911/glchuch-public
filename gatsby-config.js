@@ -7,6 +7,12 @@
 module.exports = {
   plugins: [
       `gatsby-plugin-fontawesome-css`,
-      'gatsby-plugin-react-helmet'
+      'gatsby-plugin-react-helmet',
+      {
+          resolve: `gatsby-plugin-favicon`,
+          options: {
+              logo: "./assets/img/favicon.png",
+          }
+      }
   ]
 };

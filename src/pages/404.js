@@ -6,7 +6,7 @@ export default function page404(){
         <div className="row text-center">
             <div className="col-12">
                 <h1>Страница не надена</h1>
-                <h3><Link to="/index">перейти на главную страницу</Link></h3>
+                <h1><Link to="/index">перейти на главную страницу</Link></h1>
             </div>
         </div>
     )
