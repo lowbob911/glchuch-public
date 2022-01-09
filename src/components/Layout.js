@@ -24,6 +24,7 @@ export default function Layout({element}) {
                 </script>
             </Helmet>
             <main role="main" className="container bg-white border p-0">
+                <div className="container">
                 <nav className="navbar navbar-expand-lg navbar-light bg-light mb-3 justify-content-center">
                     <Link className="navbar-brand" to="/">
                         <img
@@ -32,32 +33,28 @@ export default function Layout({element}) {
                             height="40px"
                         />
                     </Link>
-                    <div>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
-                        <div className="collapse navbar-collapse" id="navbarNav">
-                            <ul className="navbar-nav">
-                                <li className="nav-item">
-                                    <Link className="nav-link" activeClassName="text-d-underline" to="/">Главная</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link" activeClassName="text-d-underline" to="/about">О Церкви</Link>
-                                </li>
-                                {/*<li className="nav-item active">*/}
-                                {/*    <a className="nav-link" href="/services">Служения</a>*/}
-                                {/*</li>*/}
-                                <li className="nav-item">
-                                    <Link className="nav-link" activeClassName="text-d-underline" to="/questions">Вопросы-ответы</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link" activeClassName="text-d-underline" to="/statement">Вероучение</Link>
-                                </li>
-                            </ul>
-                        </div>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse text-center flex-grow-0" id="navbarNav">
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
+                                <Link className="nav-link" activeClassName="text-d-underline" to="/"><b>Главная</b></Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" activeClassName="text-d-underline" to="/about"><b>О Церкви</b></Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" activeClassName="text-d-underline" to="/questions"><b>Вопросы-ответы</b></Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" activeClassName="text-d-underline" to="/statement"><b>Вероучение</b></Link>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
+                </div>
                 <div className="px-3">
                     {element}
                 </div>

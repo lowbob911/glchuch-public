@@ -97,3 +97,7 @@ h1 {
 .publication-page-content img {
     width: 100%;
 }
+
+.navbar-nav .nav-link{
+    color: #31abe0!important;
+}
