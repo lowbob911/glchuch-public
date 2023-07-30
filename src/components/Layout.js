@@ -43,9 +43,6 @@ export default function Layout({element}) {
                                 <Link className="nav-link" activeClassName="text-d-underline" to="/"><b>Главная</b></Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" activeClassName="text-d-underline" to="/about"><b>О Церкви</b></Link>
-                            </li>
-                            <li className="nav-item">
                                 <Link className="nav-link" activeClassName="text-d-underline" to="/questions"><b>Вопросы-ответы</b></Link>
                             </li>
                             <li className="nav-item">

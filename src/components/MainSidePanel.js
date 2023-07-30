@@ -8,7 +8,7 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 config.autoAddCss = false;
 
 
-export default function MainSidePanel({schedule}) {
+export default function MainSidePanel() {
     return (
         <div className="row mt-2">
             <div className="col-12 text-center">
@@ -19,25 +19,55 @@ export default function MainSidePanel({schedule}) {
                 </h4>
             </div>
             <div className="col-12 text-right">
-                {Object.keys(schedule).map((key, index) => (
-                    <React.Fragment key={`schedule-day-${index}`}>
-                        <div className="row mt-4 text-center">
-                            <div className="col-12">
-                                <h5>{schedule[key][0].week_day.Name }</h5>
-                            </div>
-                        </div>
-                        {schedule[key].map((item, index) => (
-                            <div className="row border-bottom border-top" key={`schedule-item-${index}`}>
-                                <div className="col-3">
-                                    {item.Time}
-                                </div>
-                                <div className="col-9">
-                                    {item.Title}
-                                </div>
-                            </div>
-                        ))}
-                    </React.Fragment>
-                ))}
+                <div className="row mt-4 text-center">
+                    <div className="col-12">
+                        <h5>Четверг</h5>
+                    </div>
+                </div>
+                <div className="row border-bottom border-top">
+                    <div className="col-3">
+                        18:45
+                    </div>
+                    <div className="col-9">
+                        Молитвенное собрание
+                    </div>
+                </div>
+
+                <div className="row mt-4 text-center">
+                    <div className="col-12">
+                        <h5>Пятница</h5>
+                    </div>
+                </div>
+                <div className="row border-bottom border-top">
+                    <div className="col-3">
+                        18:30
+                    </div>
+                    <div className="col-9">
+                        Молодёжная спортивная встреча
+                    </div>
+                </div>
+
+                <div className="row mt-4 text-center">
+                    <div className="col-12">
+                        <h5>Воскресенье</h5>
+                    </div>
+                </div>
+                <div className="row border-bottom border-top">
+                    <div className="col-3">
+                        10:00
+                    </div>
+                    <div className="col-9">
+                        Утреннее собрание
+                    </div>
+                </div>
+                <div className="row border-bottom border-top">
+                    <div className="col-3">
+                        18:00
+                    </div>
+                    <div className="col-9">
+                        Вечернее собрание
+                    </div>
+                </div>
             </div>
             <div className="col-12 text-center">
                 <div className="row mt-3">
