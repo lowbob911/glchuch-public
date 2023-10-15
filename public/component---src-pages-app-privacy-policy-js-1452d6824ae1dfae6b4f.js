@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{Xce9:function(e,t,n){"use strict";n.r(t),n.d(t,"default",(function(){return l}));var a=n("q1tI"),c=n.n(a);n("Wbzz");function l(){return c.a.createElement("div",{className:"row text-center"},c.a.createElement("div",{className:"col-12"},c.a.createElement("h1",null,"Privacy Policy"),c.a.createElement("p",null,"Приложение не собирает персональны данные / Application doesn't collect personal data")))}}}]);
+//# sourceMappingURL=component---src-pages-app-privacy-policy-js-1452d6824ae1dfae6b4f.js.map
